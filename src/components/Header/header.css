@@ -1,0 +1,65 @@
+/* CSS styles for the header, navbar, and logo */
+:root{
+    --main-color:#d3ad7f;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  
+header .logo a{
+  font-size: 2rem;
+  color: #333;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+ 
+nav a{
+    margin:0 1rem;
+    font-size: 22px;
+    color:#333;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.image__cont{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  height:400px;
+  width: 400px;
+  background-color: brown;
+  flex-direction: column;
+ 
+}
+.image__cont.background__coloer{
+  background-color: brown;
+}
+img{
+  margin: 1rem;
+  width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+img.circle{
+  border-radius:50%;
+ 
+}
+img.sequre{
+  border-radius: 0px;
+}
+
